@@ -1,0 +1,139 @@
+{
+    "Level_Basic": [
+        {
+            "ID": "关卡ID",
+            "STAGE": "层级",
+            "STAGE_NUM": "层数",
+            "DIFFICULTY_LVL": "难度等级",
+            "SURFACE_ELEMENT": "地块元素库",
+            "EVENT_LOTTERY": "事件库",
+            "MONSTER_LOTTERY": "怪物库",
+            "LOOT_LOTTERY": "掉落库",
+            "PASS_AWARD": "过关奖励",
+            "MONSTER_POSITION": "怪物初始位置",
+            "SCENES": "场景",
+            "BGM": "音乐"
+        },
+        {
+            "ID": 1,
+            "STAGE": 1,
+            "STAGE_NUM": 1,
+            "DIFFICULTY_LVL": 1,
+            "SURFACE_ELEMENT": "1,2,3,4",
+            "MONSTER_LOTTERY": "100_001_10000",
+            "LOOT_LOTTERY": 1,
+            "MONSTER_POSITION": "5,5#7,7#4,6",
+            "SCENES": 1,
+            "BGM": 1
+        },
+        {
+            "ID": 1,
+            "STAGE": 1,
+            "STAGE_NUM": 2,
+            "DIFFICULTY_LVL": 2,
+            "SURFACE_ELEMENT": "1,2,3,4",
+            "MONSTER_LOTTERY": "100_001_10000",
+            "LOOT_LOTTERY": "3333#2,3333#3,3333#4",
+            "PASS_AWARD": "100_001_10000",
+            "SCENES": 1,
+            "BGM": 1
+        },
+        {
+            "ID": 1,
+            "STAGE": 1,
+            "STAGE_NUM": 3,
+            "DIFFICULTY_LVL": 3,
+            "SURFACE_ELEMENT": "1,2,3,4",
+            "MONSTER_LOTTERY": "5000#100_001_10000,5000#100_001_10001",
+            "LOOT_LOTTERY": 1,
+            "PASS_AWARD": "5000#100_001_10000,5000#100_001_10001",
+            "SCENES": 1,
+            "BGM": 1
+        },
+        {
+            "ID": 1,
+            "STAGE": 1,
+            "STAGE_NUM": 4,
+            "DIFFICULTY_LVL": 4,
+            "SURFACE_ELEMENT": "1,2,3,4",
+            "MONSTER_LOTTERY": "5000#100_001_10000,5000#100_001_10001",
+            "LOOT_LOTTERY": 1,
+            "PASS_AWARD": "5000#100_001_10000,5000#100_001_10001",
+            "SCENES": 1,
+            "BGM": 1
+        },
+        {
+            "ID": 1,
+            "STAGE": 1,
+            "STAGE_NUM": 5,
+            "DIFFICULTY_LVL": 5,
+            "SURFACE_ELEMENT": "1,2,3,4",
+            "MONSTER_LOTTERY": "5000#100_001_10000,5000#100_001_10001",
+            "LOOT_LOTTERY": 1,
+            "PASS_AWARD": "5000#100_001_10000,5000#100_001_10001",
+            "SCENES": 1,
+            "BGM": 1
+        },
+        {
+            "ID": 1,
+            "STAGE": 1,
+            "STAGE_NUM": 6,
+            "DIFFICULTY_LVL": 6,
+            "SURFACE_ELEMENT": "1,2,3,4",
+            "MONSTER_LOTTERY": "5000#100_001_10000,5000#100_001_10001",
+            "LOOT_LOTTERY": 1,
+            "PASS_AWARD": "5000#100_001_10000,5000#100_001_10001",
+            "SCENES": 1,
+            "BGM": 1
+        },
+        {
+            "ID": 1,
+            "STAGE": 1,
+            "STAGE_NUM": 7,
+            "DIFFICULTY_LVL": 7,
+            "SURFACE_ELEMENT": "1,2,3,4",
+            "MONSTER_LOTTERY": "5000#100_001_10000,5000#100_001_10001",
+            "LOOT_LOTTERY": 1,
+            "PASS_AWARD": "5000#100_001_10000,5000#100_001_10001",
+            "SCENES": 1,
+            "BGM": 1
+        },
+        {
+            "ID": 1,
+            "STAGE": 1,
+            "STAGE_NUM": 8,
+            "DIFFICULTY_LVL": 8,
+            "SURFACE_ELEMENT": "1,2,3,4",
+            "MONSTER_LOTTERY": "5000#100_001_10000,5000#100_001_10001",
+            "LOOT_LOTTERY": 1,
+            "PASS_AWARD": "5000#100_001_10000,5000#100_001_10001",
+            "SCENES": 1,
+            "BGM": 1
+        },
+        {
+            "ID": 1,
+            "STAGE": 1,
+            "STAGE_NUM": 9,
+            "DIFFICULTY_LVL": 9,
+            "SURFACE_ELEMENT": "1,2,3,4",
+            "MONSTER_LOTTERY": "5000#100_001_10000,5000#100_001_10001",
+            "LOOT_LOTTERY": 1,
+            "PASS_AWARD": "5000#100_001_10000,5000#100_001_10001",
+            "SCENES": 1,
+            "BGM": 1
+        },
+        {
+            "ID": 1,
+            "STAGE": 1,
+            "STAGE_NUM": 10,
+            "DIFFICULTY_LVL": 10,
+            "SURFACE_ELEMENT": "1,2,3,4",
+            "MONSTER_LOTTERY": "100_001_10002",
+            "LOOT_LOTTERY": 1,
+            "PASS_AWARD": "100_001_10002",
+            "MONSTER_POSITION": "8,8",
+            "SCENES": 2,
+            "BGM": 1
+        }
+    ]
+}

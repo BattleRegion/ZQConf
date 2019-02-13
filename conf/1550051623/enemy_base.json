@@ -1,0 +1,137 @@
+{
+    "Enemy_Base": [
+        {
+            "ID": "怪物ID",
+            "ENEMY_STATUS_KIND": "怪物基础属性KIND",
+            "NAME": "名称",
+            "PRESET_SHAPE_ID": "皮肤ID",
+            "LEVEL": "等级",
+            "SIZE": "占格大小",
+            "SCALE": "缩放",
+            "ENCHANT": "被动效果",
+            "ENEMYAI_ID": "AI",
+            "STATUS_RATIO": "属性调整",
+            "DROP": "掉落"
+        },
+        {
+            "ID": "100_001_00001",
+            "ENEMY_STATUS_KIND": "HUMAN_BASIC",
+            "NAME": "巡山小妖1",
+            "PRESET_SHAPE_ID": "001_100_00100",
+            "LEVEL": 1,
+            "SIZE": 1,
+            "SCALE": 1,
+            "ENEMYAI_ID": "001_100_00100",
+            "STATUS_RATIO": "HP=200%\nATK=100%\nMATK=100%\nDEF=100%\nMDEF=100%\nHIT=100%\nCRI=100%\nAVO=0%\nLIGHT=200%\nDARK=8%",
+            "DROP": "EXP 6000\nGOLD 2000\nITEM:001_100_00100 25% 5\nITEM:001_100_00100 35% 4\nITEM:001_100_00100 45% 3\nITEM:001_100_00100 55% 2\nITEM:001_100_001000 100% 1"
+        },
+        {
+            "ID": "100_001_00002",
+            "ENEMY_STATUS_KIND": "HUMAN_BASIC",
+            "NAME": "巡山小妖2",
+            "PRESET_SHAPE_ID": "001_100_00100",
+            "LEVEL": 2,
+            "SIZE": 1,
+            "SCALE": 1,
+            "ENEMYAI_ID": "001_100_00100",
+            "STATUS_RATIO": "HP=200%\nATK=100%\nMATK=100%\nDEF=100%\nMDEF=100%\nHIT=100%\nCRI=100%\nAVO=0%\nLIGHT=200%\nDARK=8%",
+            "DROP": "EXP 6000\nGOLD 2000\nITEM:001_100_00100 25% 5\nITEM:001_100_00100 35% 4\nITEM:001_100_00100 45% 3\nITEM:001_100_00100 55% 2\nITEM:001_100_001000 100% 1"
+        },
+        {
+            "ID": "100_001_00003",
+            "ENEMY_STATUS_KIND": "HUMAN_BASIC",
+            "NAME": "巡山小妖3",
+            "PRESET_SHAPE_ID": "001_100_00101",
+            "LEVEL": 3,
+            "SIZE": 1,
+            "SCALE": 1,
+            "ENEMYAI_ID": "001_100_00100",
+            "STATUS_RATIO": "HP=200%\nATK=100%\nMATK=100%\nDEF=100%\nMDEF=100%\nHIT=100%\nCRI=100%\nAVO=0%\nLIGHT=200%\nDARK=9%",
+            "DROP": "EXP 6000\nGOLD 2000\nITEM:001_100_00100 25% 5\nITEM:001_100_00100 35% 4\nITEM:001_100_00100 45% 3\nITEM:001_100_00100 55% 2\nITEM:001_100_001000 100% 2"
+        },
+        {
+            "ID": "100_001_00004",
+            "ENEMY_STATUS_KIND": "HUMAN_BASIC",
+            "NAME": "巡山小妖4",
+            "PRESET_SHAPE_ID": "001_100_00102",
+            "LEVEL": 4,
+            "SIZE": 1,
+            "SCALE": 1,
+            "ENEMYAI_ID": "001_100_00100",
+            "STATUS_RATIO": "HP=200%\nATK=100%\nMATK=100%\nDEF=100%\nMDEF=100%\nHIT=100%\nCRI=100%\nAVO=0%\nLIGHT=200%\nDARK=10%",
+            "DROP": "EXP 6000\nGOLD 2000\nITEM:001_100_00100 25% 5\nITEM:001_100_00100 35% 4\nITEM:001_100_00100 45% 3\nITEM:001_100_00100 55% 2\nITEM:001_100_001000 100% 3"
+        },
+        {
+            "ID": "100_001_00005",
+            "ENEMY_STATUS_KIND": "HUMAN_BASIC",
+            "NAME": "巡山小妖5",
+            "PRESET_SHAPE_ID": "001_100_00103",
+            "LEVEL": 5,
+            "SIZE": 1,
+            "SCALE": 1,
+            "ENEMYAI_ID": "001_100_00100",
+            "STATUS_RATIO": "HP=200%\nATK=100%\nMATK=100%\nDEF=100%\nMDEF=100%\nHIT=100%\nCRI=100%\nAVO=0%\nLIGHT=200%\nDARK=11%",
+            "DROP": "EXP 6000\nGOLD 2000\nITEM:001_100_00100 25% 5\nITEM:001_100_00100 35% 4\nITEM:001_100_00100 45% 3\nITEM:001_100_00100 55% 2\nITEM:001_100_001000 100% 4"
+        },
+        {
+            "ID": "100_001_00006",
+            "ENEMY_STATUS_KIND": "HUMAN_BASIC",
+            "NAME": "巡山小妖6",
+            "PRESET_SHAPE_ID": "001_100_00104",
+            "LEVEL": 6,
+            "SIZE": 1,
+            "SCALE": 1,
+            "ENEMYAI_ID": "001_100_00100",
+            "STATUS_RATIO": "HP=200%\nATK=100%\nMATK=100%\nDEF=100%\nMDEF=100%\nHIT=100%\nCRI=100%\nAVO=0%\nLIGHT=200%\nDARK=12%",
+            "DROP": "EXP 6000\nGOLD 2000\nITEM:001_100_00100 25% 5\nITEM:001_100_00100 35% 4\nITEM:001_100_00100 45% 3\nITEM:001_100_00100 55% 2\nITEM:001_100_001000 100% 5"
+        },
+        {
+            "ID": "100_001_00007",
+            "ENEMY_STATUS_KIND": "HUMAN_BASIC",
+            "NAME": "巡山小妖7",
+            "PRESET_SHAPE_ID": "001_100_00105",
+            "LEVEL": 7,
+            "SIZE": 1,
+            "SCALE": 1,
+            "ENEMYAI_ID": "001_100_00100",
+            "STATUS_RATIO": "HP=200%\nATK=100%\nMATK=100%\nDEF=100%\nMDEF=100%\nHIT=100%\nCRI=100%\nAVO=0%\nLIGHT=200%\nDARK=13%",
+            "DROP": "EXP 6000\nGOLD 2000\nITEM:001_100_00100 25% 5\nITEM:001_100_00100 35% 4\nITEM:001_100_00100 45% 3\nITEM:001_100_00100 55% 2\nITEM:001_100_001000 100% 6"
+        },
+        {
+            "ID": "100_001_00008",
+            "ENEMY_STATUS_KIND": "HUMAN_BASIC",
+            "NAME": "巡山小妖8",
+            "PRESET_SHAPE_ID": "001_100_00106",
+            "LEVEL": 8,
+            "SIZE": 1,
+            "SCALE": 1,
+            "ENEMYAI_ID": "001_100_00100",
+            "STATUS_RATIO": "HP=200%\nATK=100%\nMATK=100%\nDEF=100%\nMDEF=100%\nHIT=100%\nCRI=100%\nAVO=0%\nLIGHT=200%\nDARK=14%",
+            "DROP": "EXP 6000\nGOLD 2000\nITEM:001_100_00100 25% 5\nITEM:001_100_00100 35% 4\nITEM:001_100_00100 45% 3\nITEM:001_100_00100 55% 2\nITEM:001_100_001000 100% 7"
+        },
+        {
+            "ID": "100_001_00009",
+            "ENEMY_STATUS_KIND": "HUMAN_BASIC",
+            "NAME": "巡山小妖9",
+            "PRESET_SHAPE_ID": "001_100_00107",
+            "LEVEL": 9,
+            "SIZE": 1,
+            "SCALE": 1,
+            "ENEMYAI_ID": "001_100_00100",
+            "STATUS_RATIO": "HP=200%\nATK=100%\nMATK=100%\nDEF=100%\nMDEF=100%\nHIT=100%\nCRI=100%\nAVO=0%\nLIGHT=200%\nDARK=15%",
+            "DROP": "EXP 6000\nGOLD 2000\nITEM:001_100_00100 25% 5\nITEM:001_100_00100 35% 4\nITEM:001_100_00100 45% 3\nITEM:001_100_00100 55% 2\nITEM:001_100_001000 100% 8"
+        },
+        {
+            "ID": "100_001_00010",
+            "ENEMY_STATUS_KIND": "HUMAN_BASIC",
+            "NAME": "巡山小妖10",
+            "PRESET_SHAPE_ID": "001_100_00108",
+            "LEVEL": 10,
+            "SIZE": 4,
+            "SCALE": 2,
+            "ENEMYAI_ID": "001_100_00100",
+            "STATUS_RATIO": "HP=1000%\nATK=300%\nMATK=100%\nDEF=200%\nMDEF=100%\nHIT=100%\nCRI=100%\nAVO=0%\nLIGHT=200%\nDARK=16%",
+            "DROP": "EXP 6000\nGOLD 2000\nITEM:001_100_00100 25% 5\nITEM:001_100_00100 35% 4\nITEM:001_100_00100 45% 3\nITEM:001_100_00100 55% 2\nITEM:001_100_001000 100% 9"
+        }
+    ]
+}
