@@ -54,6 +54,7 @@ Async.series(parseTasks, (e,r)=>{
     if(e){
         code = 1;
     }
+    console.log("parse done!!!!");
     process.exit(code);
 });
 
