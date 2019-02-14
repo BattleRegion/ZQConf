@@ -2,7 +2,7 @@ const CONF_PATH = process.argv[2];
 const fs = require('fs');
 const path = require('path');
 const Async = require('async');
-
+const archiver = require('archiver');
 //遍历文件夹
 let allConfFiles = [];
 let parseTasks = [];
@@ -24,6 +24,31 @@ for(let i = 0; i<allConfFiles.length;i++){
     }
 }
 
+parseTasks.push(function(cb){
+    let zipFolderPath = `${process.cwd()}/conf/${timeV}`;
+    let zipPath = `${process.cwd()}/conf/latest.zip`;
+    if(fs.existsSync(zipPath)){
+        fs.unlinkSync(zipPath);
+    }
+    let output = fs.createWriteStream(zipPath);
+    let archive = archiver('zip', {
+        zlib: { level: 9 } // Sets the compression level.
+    });
+
+    output.on('end', function() {
+        console.log('Data has been drained');
+    });
+
+    fs.readdirSync(zipFolderPath).forEach(function (file) {
+        let p = `${zipFolderPath}/${file}`;
+        archive.append(fs.createReadStream(p), { name: file });
+    });
+    archive.pipe(output);
+    archive.finalize();
+
+    cb(null, null);
+});
+
 Async.series(parseTasks, (e,r)=>{
     let code = 0;
     if(e){
@@ -31,6 +56,10 @@ Async.series(parseTasks, (e,r)=>{
     }
     process.exit(code);
 });
+
+function zipFolder(cb){
+
+}
 
 function travel(folderPath){
     fs.readdirSync(folderPath).forEach(function (file) {
