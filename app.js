@@ -25,7 +25,11 @@ for(let i = 0; i<allConfFiles.length;i++){
 }
 
 Async.series(parseTasks, (e,r)=>{
-
+    let code = 0;
+    if(e){
+        code = 1;
+    }
+    process.exit(code);
 });
 
 function travel(folderPath){
