@@ -5,7 +5,7 @@ class EnemyGacha extends Base {
     }
 
     specDeal(){
-        console.log(this.confData);
+        // console.log(this.confData);
     }
 }
 

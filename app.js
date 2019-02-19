@@ -33,16 +33,27 @@ parseTasks.push(function(cb){
 
     let output = fs.createWriteStream(zipPath);
     let archive = archiver('zip');
-    archive.pipe(output);
 
     fs.readdirSync(zipFolderPath).forEach(function (file) {
         let p = `${zipFolderPath}/${file}`;
         archive.append(fs.createReadStream(p), { name: file });
     });
 
-    archive.on('end',()=>{
-        cb(null, null);
+    archive.on('entry', function(r) {
+        // console.log(r);
+        // cb(null, null);
     });
+
+    archive.on('progress', function(r) {
+        console.log(r);
+        if(r['entries'].total === r['entries'].processed){
+            setTimeout(()=>{
+                cb(null, null);
+            },3000);
+        }
+    });
+
+    archive.pipe(output);
     archive.finalize();
 
     // cb(null, null);
