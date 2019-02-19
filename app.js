@@ -49,7 +49,7 @@ parseTasks.push(function(cb){
         if(r['entries'].total === r['entries'].processed){
             setTimeout(()=>{
                 cb(null, null);
-            },3000);
+            },1000);
         }
     });
 
