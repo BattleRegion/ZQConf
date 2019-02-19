@@ -30,23 +30,22 @@ parseTasks.push(function(cb){
     if(fs.existsSync(zipPath)){
         fs.unlinkSync(zipPath);
     }
-    let output = fs.createWriteStream(zipPath);
-    let archive = archiver('zip', {
-        zlib: { level: 9 } // Sets the compression level.
-    });
 
-    output.on('end', function() {
-        console.log('Data has been drained');
-    });
+    let output = fs.createWriteStream(zipPath);
+    let archive = archiver('zip',{ zlib: { level: 9 } });
+    archive.pipe(output);
 
     fs.readdirSync(zipFolderPath).forEach(function (file) {
         let p = `${zipFolderPath}/${file}`;
         archive.append(fs.createReadStream(p), { name: file });
     });
-    archive.pipe(output);
+
+    archive.on('end',()=>{
+        cb(null, null);
+    });
     archive.finalize();
 
-    cb(null, null);
+    // cb(null, null);
 });
 
 Async.series(parseTasks, (e,r)=>{
