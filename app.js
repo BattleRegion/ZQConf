@@ -32,7 +32,7 @@ parseTasks.push(function(cb){
     }
 
     let output = fs.createWriteStream(zipPath);
-    let archive = archiver('zip',{ zlib: { level: 9 } });
+    let archive = archiver('zip');
     archive.pipe(output);
 
     fs.readdirSync(zipFolderPath).forEach(function (file) {
