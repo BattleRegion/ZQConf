@@ -74,6 +74,8 @@ typings/
 # Serverless directories
 .serverless
 
+.project
+
 .idea
 
 .idea/
