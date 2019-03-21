@@ -59,7 +59,6 @@ parseTasks.push(function(cb){
 });
 
 //zip client
-let self = this;
 parseTasks.push(function(cb){
     let clientFolderPath = `${process.cwd()}/conf/${timeV}_client`;
     let lastPath = `${process.cwd()}/conf/last_client`;
