@@ -61,13 +61,14 @@ class Base {
     specDeal() {
         let clientConfTag = this.serverConfData[0];
         let keys = Object.keys(clientConfTag);
-        let total = 0;
         this.serverConfData = this.serverConfData.slice(1, this.serverConfData.length);
-        this.clientConfData = this.serverConfData.map(data=>{
+
+        let tempServerData = JSON.parse(JSON.stringify(this.serverConfData));
+
+        this.clientConfData = tempServerData.map(data=>{
             for(let i = 0;i<keys.length;i++){
                 let k = keys[i];
-                total = total + clientConfTag[k];
-                if(clientConfTag[k] !== 1){
+                if(~~clientConfTag[k] !== 1){
                     delete data[keys[i]];
                 }
             }
