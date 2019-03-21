@@ -24,6 +24,7 @@ for(let i = 0; i<allConfFiles.length;i++){
     }
 }
 
+//zip server
 parseTasks.push(function(cb){
     let zipFolderPath = `${process.cwd()}/conf/${timeV}`;
     let zipPath = `${process.cwd()}/conf/latest.zip`;
@@ -55,8 +56,40 @@ parseTasks.push(function(cb){
 
     archive.pipe(output);
     archive.finalize();
+});
 
-    // cb(null, null);
+//zip client
+parseTasks.push(function(cb){
+    let zipFolderPath = `${process.cwd()}/conf/${timeV}`;
+    let zipPath = `${process.cwd()}/conf/latest_client.zip`;
+    if(fs.existsSync(zipPath)){
+        fs.unlinkSync(zipPath);
+    }
+
+    let output = fs.createWriteStream(zipPath);
+    let archive = archiver('zip');
+
+    fs.readdirSync(zipFolderPath).forEach(function (file) {
+        let p = `${zipFolderPath}/${file}`;
+        archive.append(fs.createReadStream(p), { name: file });
+    });
+
+    archive.on('entry', function(r) {
+        // console.log(r);
+        // cb(null, null);
+    });
+
+    archive.on('progress', function(r) {
+        console.log(r);
+        if(r['entries'].total === r['entries'].processed){
+            setTimeout(()=>{
+                cb(null, null);
+            },1000);
+        }
+    });
+
+    archive.pipe(output);
+    archive.finalize();
 });
 
 Async.series(parseTasks, (e,r)=>{
