@@ -59,9 +59,22 @@ parseTasks.push(function(cb){
 });
 
 //zip client
+let self = this;
 parseTasks.push(function(cb){
     let clientFolderPath = `${process.cwd()}/conf/${timeV}_client`;
     let lastPath = `${process.cwd()}/conf/last_client`;
+    if(fs.existsSync(lastPath)){
+        let files = fs.readdirSync(lastPath);
+        files.forEach((file) => {
+            let curPath = lastPath + "/" + file;
+            if(fs.statSync(curPath).isDirectory()){
+                delDir(curPath); //递归删除文件夹
+            } else {
+                fs.unlinkSync(curPath); //删除文件
+            }
+        });
+        fs.rmdirSync(lastPath);
+    }
     fs.renameSync(clientFolderPath, lastPath);
     cb(null,{})
 });
@@ -75,8 +88,20 @@ Async.series(parseTasks, (e,r)=>{
     process.exit(code);
 });
 
-function zipFolder(cb){
-
+function delDir(path){
+    let files = [];
+    if(fs.existsSync(path)){
+        files = fs.readdirSync(path);
+        files.forEach((file, index) => {
+            let curPath = path + "/" + file;
+            if(fs.statSync(curPath).isDirectory()){
+                delDir(curPath); //递归删除文件夹
+            } else {
+                fs.unlinkSync(curPath); //删除文件
+            }
+        });
+        fs.rmdirSync(path);
+    }
 }
 
 function travel(folderPath){
